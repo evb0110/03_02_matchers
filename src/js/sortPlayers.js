@@ -7,11 +7,11 @@ const validateInput = (input) => {
 };
 
 const validatePlayer = (player) => {
-  if (!(typeof player === 'object')) {
+  if (typeof player !== 'object') {
     throw new Error('invalid input: player must be an object');
   }
   const { name, health } = player;
-  if (!(typeof name === 'string') || !(typeof health === 'number')) {
+  if ((typeof name !== 'string') || (typeof health !== 'number')) {
     throw new Error('wrong or missing properties of player');
   }
   return true;
