@@ -127,3 +127,19 @@ package.json
 -----
 https://webpack.js.org/configuration/dev-server/#devserver-open
 
+========
+.gitignore
+-----
+from Node 
+add dist directory
+
+скопировать
+=========
+.babelrc
+------
+{
+  "presets": [["@babel/preset-env", {
+    "useBuiltIns": "usage"
+  }]]
+}
+------

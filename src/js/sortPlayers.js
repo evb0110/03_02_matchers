@@ -1,9 +1,5 @@
-const healthComparator = (a, b) => {
-  return a.health - b.health;
-}
+const healthComparator = (a, b) => a.health - b.health;
 
-const sortPlayers = (players) => {
-  return players.sort(healthComparator)
-}
+const sortPlayers = players => players.sort(healthComparator);
 
 export default sortPlayers;
