@@ -1,0 +1,1 @@
+import sortPlayers from './sortPlayers';
